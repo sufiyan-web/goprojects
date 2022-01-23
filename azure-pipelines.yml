@@ -8,7 +8,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: '**'
-    TargetFolder: '${BuildArtifactStagingDirectory}'
+    TargetFolder: '${Build.ArtifactStagingDirectory}'
 
 - task: PublishBuildArtifacts@1
   inputs:
