@@ -19,7 +19,8 @@ steps:
   inputs:
     version: '1.15'
 
+
 - task: Go@0
   inputs:
     command: 'build'
-    arguments: '$(Build.ArtifactStagingDirectory)/main'
+    workingDirectory: '$(Build.ArtifactStagingDirectory)/main'
